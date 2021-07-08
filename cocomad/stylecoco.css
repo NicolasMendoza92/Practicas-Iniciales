@@ -1,0 +1,91 @@
+/* seccion barra de navegacion  */
+.logo {
+   width: 30px;
+   margin-right: 0.5rem;
+   vertical-align: middle;
+   display: inline-block;  
+}
+.barranav {
+   background-color: rgb(246, 181, 181);
+}
+.barranav a {
+   font-family: 'Courgette', cursive;
+}
+/* seccoion carrousel fotos */
+.carousel-cocomad {
+   border-radius: 3rem;
+   font-family:'Courgette', cursive;
+}
+.carousel-alfajores {
+   color: black;
+}
+.carousel-conito {
+   color: black;
+}
+/* seccion de bienvenida */
+h1 {
+   font-family:'Courgette', cursive;
+   font-size: 50px;
+   font-family: 'Pattaya', sans-serif;
+   color: whitesmoke;
+}
+.bienvenidos {
+   text-align: center;
+   background-color: rgba(224, 153, 153, 0.65);
+   padding: 3rem;
+}
+
+/* seccion cards */
+.cards-coco .card{
+   max-width: 300px;
+}
+.tarjetas {
+   align-items:center;
+   background-color: rgb(253, 211, 211);
+   font-family:'Courgette', cursive ;
+}
+.boton {
+   background-color: whitesmoke;
+   color: rosybrown;
+   border:solid rosybrown;
+   border-radius: 1rem;
+}
+/* seccion de nosotros */
+.nosotros {
+   text-align: center;
+   background-color: rgba(121, 245, 239, 0.609);
+   padding: 3rem; 
+}
+/* seccion pie de pagina  */
+ .footer {
+   background-color:white;
+   border-top: double rosybrown;
+   padding: 1rem 0;
+}
+.footer a :hover {
+   color: rosybrown;
+}
+.social-icon {
+   font-size: 3rem;
+   margin:0 10px;
+   color:gray;
+   transition-duration: 0.5s;
+}
+.social-icon :hover {
+ color: rosybrown;
+ text-shadow: 4px 3px 2px rgba(58, 57, 57, 0.575), 4px 4px 5px rgba(112, 112, 112, 0.493);
+}
+.links {
+   list-style: none;
+}
+.links a {
+   color: gray;
+   text-decoration: none;
+}
+.links a :hover {
+   color: rosybrown;
+   font-size: 110%;
+}
+.imagen-pie{
+   width: 200px;
+}

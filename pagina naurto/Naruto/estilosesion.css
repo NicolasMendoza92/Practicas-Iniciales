@@ -1,0 +1,116 @@
+* {
+    margin: 0%;
+}
+body {
+    background-image: url(https://wallpaperaccess.com/full/630537.png);
+}
+/* seccion barra de navegacion */
+.logo {
+    width: 80px;
+    vertical-align: middle;
+    margin-left: 1rem;
+    display: inline-block;
+}
+.giro {
+    transition-duration: 0.5s;
+}
+.giro:hover {
+    transform: rotate3d(0.8, 1, 0, 360deg);
+    transition-timing-function: ease-in;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    font-family: "Reggae One";
+}
+.navbar a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+.navbar a:visited {
+    color: orange;
+}
+.navbar a:hover {
+    color: blue;
+}
+
+/* seccion redes */
+.redes {
+    background-color: black;
+    position: fixed;
+    flex-direction: column;
+    top: 200px;
+    left: 0%;
+    display: flex;
+    margin-bottom: 0%;
+    font-size: 30px;
+}
+.redes a:visited {
+    color: orange;
+}
+.redes a:hover {
+    color: blue;
+}
+
+/* seccion contacto iniciar sesion y registrarse */
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formularios h3 {
+    font-size: 20px;
+    font-family: "Reggae One";
+}
+.formularios a {
+    text-decoration: none;
+    font-family:"Architects Daughter";
+    font-size: 12px;
+}
+.formularios a:visited {
+    color: orange;
+}
+.formularios a:hover {
+    color: blue;
+}
+.inicio-ses {
+    background-color: black;
+    color: orange;
+    font-family: "Architects Daughter";
+    text-align: center;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+.botoningre {
+    border: none;
+    font-family: "Architects Daughter";
+    color:black;
+    background-color: orange;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.registro {
+    background-color: black;
+    color: orange;
+    font-family: "Architects Daughter";
+    text-align: center;
+    width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+}
+.botonregi {
+    border: none;
+    font-family: "Architects Daughter";
+    font-size: 15px;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}

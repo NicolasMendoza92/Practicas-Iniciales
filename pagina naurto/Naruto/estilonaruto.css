@@ -1,0 +1,188 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* seccion barra de navegacion */
+.logo {
+    width: 80px;
+    vertical-align: middle;
+    margin-left: 1rem;
+    display: inline-block;   
+}
+.giro {
+    transition-duration: 0.5s;
+}
+.giro:hover {
+    transform: rotate3d(0.8,1,0,360deg);
+    transition-timing-function:ease-in;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    font-family: "Reggae One";
+}
+.navbar a {
+    text-decoration: none;
+    color: orange;
+    padding: 5px;
+}
+.navbar a:visited {
+    color: orange;
+}
+.navbar a:hover {
+    color: blue;
+    font-size: 105%;
+}
+.sesion {
+    position: absolute;
+    right: 100px;
+}
+.lista-nav {
+    display: none;
+    position: absolute;
+    border:1px solid orange;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.lista-nav .user {
+    display: block;
+}
+.user:hover {
+    display: block;
+}
+.sesion:hover .lista-nav {
+    display: block;
+}
+.lista-nav a {
+    display: block !important;
+    margin: 1rem;
+}
+
+/* seccion navegacion lateral redes */
+.redes { 
+    background-color: black;
+    position: fixed;
+    flex-direction: column;
+    top: 200px;
+    left: 0%;
+    display: flex;
+    margin-bottom: 0%;
+    font-size: 30px;
+}
+.redes a:visited {
+    color: orange;
+}
+.redes a:hover {
+        color: blue;
+        font-size: 105%;
+}
+/* seccion principal */
+body {
+    background-image: url(https://pbs.twimg.com/media/DxhwpPwVYAEL7Co.jpg:large);
+}
+.cuerpo-ppal { 
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 4px outset orange;
+    text-align: center; 
+    background-color:rgba(0, 0, 0, 0.815);
+    color: orange;
+    font-family: 'Architects Daughter';
+}
+.cuerpo-ppal h4 {
+    color: whitesmoke;
+    font-size: 30px;
+}
+.cuerpo-ppal hr {
+    color: whitesmoke;
+}
+table, th, td{
+    border: 1px solid;
+    color: orange;
+}
+/* Seccion tabla de aldeas y kages */
+.kages-aldeas{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    margin: auto;
+}
+.kages {
+    display: flex;
+    justify-content: center;
+}
+.kages img {
+    width: 20px;
+}
+.aldeas {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    background-color: antiquewhite;
+}
+.aldeas a {
+    color: orange;
+    text-decoration: none;
+}
+.aldeas a:visited {
+    color: orange;
+}
+.aldeas a:hover {
+    color: blue;
+}
+
+/* Seccion Temporadas */
+.seasons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    font-family:'Architects Daughter';
+    font-size: 15px;
+}
+.seasons a {
+    text-decoration: none;
+}
+.seasons a:visited {
+    color:orange
+}
+.seasons a:hover {
+    color:blue
+}
+.seasons img {
+    width: 100%;
+}
+.seasons img:hover {
+filter: opacity(.5);
+}
+/* seccion footer */
+.pie-pag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:orange;
+    color: black;
+    font-family: 'Architects Daughter';
+}
+.pie-pag a {
+    text-decoration: none;
+}
+.pie-pag a:visited {
+    color:black;
+}
+.pie-pag a:hover {
+    color: blue;
+}
+.footer-letra {
+    text-align: center;
+}
+.footer-img{
+    text-align: center;
+}
