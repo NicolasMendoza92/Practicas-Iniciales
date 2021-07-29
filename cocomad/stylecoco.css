@@ -2,8 +2,7 @@
 .logo {
    width: 30px;
    margin-right: 0.5rem;
-   vertical-align: middle;
-   display: inline-block;  
+   vertical-align: middle; 
 }
 .barranav {
    background-color: rgb(181, 246, 243);
@@ -11,6 +10,7 @@
 .barranav a {
    font-family: 'Courgette', cursive;
 }
+
 /* seccoion carrousel fotos */
 .carousel-cocomad {
    border-radius: 3rem;
