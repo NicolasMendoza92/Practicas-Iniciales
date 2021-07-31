@@ -1,14 +1,31 @@
+
+/* seccion barra de envio y red */
+.icon-navbar {
+   font-size: 25px;
+   color: black;
+ }
+
 /* seccion barra de navegacion  */
-.logo {
-   width: 30px;
+.logo-nabvar {
+   width: 150px;
    margin-right: 0.5rem;
-   vertical-align: middle; 
+   margin-left: 0.5rem;
 }
+@media only screen and (max-width: 375 px) {
+
+   .search-navbar {
+      width: 80px;
+   }
+ }
+
 .barranav {
-   background-color: rgb(181, 246, 243);
+   background-color: white;
 }
 .barranav a {
    font-family: 'Courgette', cursive;
+}
+.icon-user-nav{
+   font-size: 35 px;
 }
 
 /* seccoion carrousel fotos */
