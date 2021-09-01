@@ -1,108 +1,176 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
 
-/* seccion barra de envio y red */
-.icon-navbar {
-   font-size: 25px;
-   color: black;
- }
 
 /* seccion barra de navegacion  */
-.logo-nabvar {
-   width: 150px;
-   margin-right: 0.5rem;
-   margin-left: 0.5rem;
-}
-@media only screen and (max-width: 375 px) {
 
-   .search-navbar {
-      width: 80px;
+.barranav {
+   background-color: rgb(255, 255, 255);
+   color: rgb(136, 132, 132);
+   font-family: 'Pattaya', sans-serif;
+   border-bottom: double rgb(146, 210, 226);
+}
+.nav-lista a {
+   font-size: 30px;
+   color: rgb(136, 132, 132);
+   text-decoration: none;
+}
+.nav-lista a:hover{
+   color: rgb(146, 210, 226);
+}
+
+.logo-header {
+   width: 50px;
+}
+
+/* seccion IMAGEN PPAL */
+
+.ppal-image {
+   background-image: url(./cocoimag/alfajores\ clasicos.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment:fixed;
+   width: 100%;
+   height:800px;
+}
+@media only screen and (max-width: 1000px) {
+   .ppal-image {
+     height: 400px;
    }
  }
 
-.barranav {
-   background-color: white;
+ .ppal-image h1 {
+  font-size: 60px;
+  font-family: 'Pattaya', sans-serif;
+  color: white;
 }
-.barranav a {
-   font-family: 'Courgette', cursive;
-}
-.icon-user-nav{
-   font-size: 35 px;
-}
+.ppal-image p {
+   font-size: 20px;
+   font-family: 'Cardo', serif;
+   color: white;
+ }
 
-/* seccoion carrousel fotos */
-.carousel-cocomad {
-   border-radius: 3rem;
-   font-family:'Courgette', cursive;
-}
-.carousel-alfajores {
-   color: black;
-}
-.carousel-conito {
-   color: black;
-}
 /* seccion de bienvenida */
-h1 {
-   font-family:'Courgette', cursive;
-   font-size: 50px;
-   font-family: 'Pattaya', sans-serif;
-   color: whitesmoke;
-}
+
 .bienvenidos {
    text-align: center;
-   background-color: rgba(224, 153, 153, 0.65);
-   padding: 3rem;
+   /* background-color: rgb(146, 210, 226); */
+   padding: 1rem;
+}
+.bienvenidos h1 {
+   font-family: 'Courgette', cursive;
+   font-size: 50px;
+   font-family: 'Pattaya', sans-serif;
+   color: rgb(136, 132, 132);
 }
 
-/* seccion cards */
-.cards-coco .card{
-   max-width: 300px;
+
+/* seccion de cards */
+.tarjetas{
+   border: none;
+   font-family: 'Pattaya', sans-serif;
 }
-.tarjetas {
-   align-items:center;
-   background-color: rgb(253, 211, 211);
-   font-family:'Courgette', cursive ;
+.tarjetas h2 {
+   font-family: 'Pattaya', sans-serif;
 }
-.boton {
-   background-color: whitesmoke;
-   color: rosybrown;
-   border:solid rosybrown;
+.tarjetas p {
+   font-size: 20px;
+}
+.img-tarjetas{
+   max-height:470px ;
+   max-width: 600px;
    border-radius: 1rem;
 }
-/* seccion de nosotros */
-.nosotros {
-   text-align: center;
-   background-color: rgba(121, 245, 239, 0.609);
-   padding: 3rem; 
+.boton-producto {
+   text-decoration: none;
+color: cadetblue;
+border-color: cadetblue;
 }
+
+/* seccion contacto */
+
+.apertura h1{
+   font-family: 'Pattaya', sans-serif;
+}
+.links-contacto {
+   list-style: none;
+   font-family: 'Pattaya', sans-serif;
+   font-size: 35px;
+}
+.links-contacto p {
+   font-family: 'Pattaya', sans-serif;
+   font-size: 30px;
+}
+
+.formu {
+   font-family: 'Pattaya', sans-serif;
+}
+.formu h1 {
+   font-family: 'Pattaya', sans-serif;
+}
+
 /* seccion pie de pagina  */
- .footer {
-   background-color:white;
-   border-top: double rosybrown;
+
+.footer {
+   background-color: white;
+   border-top: double rgb(146, 210, 226);
    padding: 1rem 0;
 }
+
 .footer a :hover {
-   color: rosybrown;
+   color: rgb(146, 210, 226);
 }
+
 .social-icon {
-   font-size: 3rem;
-   margin:0 10px;
-   color:gray;
+   font-size: 5rem;
+   margin: 0 10px;
+   color: rgb(136, 132, 132);
    transition-duration: 0.5s;
 }
+
 .social-icon :hover {
- color: rosybrown;
- text-shadow: 4px 3px 2px rgba(58, 57, 57, 0.575), 4px 4px 5px rgba(112, 112, 112, 0.493);
+   color: rgb(146, 210, 226);
+   text-shadow: 4px 3px 2px rgba(58, 57, 57, 0.575), 4px 4px 5px rgba(112, 112, 112, 0.493);
 }
+
 .links {
    list-style: none;
+   font-size: 20px;
 }
+
 .links a {
-   color: gray;
+   color: rgb(136, 132, 132);
    text-decoration: none;
 }
+
 .links a :hover {
-   color: rosybrown;
-   font-size: 110%;
+   color: rgb(146, 210, 226);
+   font-size: 125%;
 }
-.imagen-pie{
-   width: 200px;
+
+.imagen-pie {
+   width: 400px;
+}
+
+.bg {
+   background-color: white;
+   border-top: double rgb(146, 210, 226);
+   padding: 1rem 0;
+}
+.volverArriba {
+   font-size: 2.5rem;
+   color: rgb(39, 38, 38);
+   text-decoration: none;
+   transition: 0.4s;
+}
+.volverArriba:link,
+.volverArriba:visited,
+.volverArriba:active {
+   color: rgb(136, 132, 132);
+}
+.volverArriba:hover {
+   color: rgb(146, 210, 226);
 }
