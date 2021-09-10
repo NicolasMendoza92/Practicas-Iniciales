@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ /* seccion barra de navegacion  */
+ 
+ .barranav {
+    padding: 2rem 1rem 2rem 1rem;
+    overflow: hidden;
+    background-color: none;
+    color: whitesmoke;
+    font-family: 'Julius Sans One', sans-serif;
+ }
+ 
+ .barranav a {
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+ }
+ 
+ .barranav a:hover {
+    color: rgb(146, 210, 226);
+ }
+ .barranav a.active {
+    background-color: none;
+    color: white;
+  }
+ 
+  .burger{
+     font-size: 30px;
+  }
+ 
+ .barranav .burger {
+    display: none;
+ }
+ 
+ @media screen and (max-width: 1050px) {
+    .barranav a:not(:first-child) {display: none;}
+    .barranav a.burger {
+      float: right;
+      display: block;
+    }
+  }
+ 
+  @media screen and (max-width: 1050px) {
+    .barranav.responsive .burger {
+      position: absolute;
+      right: 0;
+    }
+    .barranav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+  }
+ 
+ .buyer-icon {
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+ }
+ 
+ .buyer-icon:hover {
+    color: rgb(146, 210, 226);
+ }
+ 
+ /* seccion IMAGEN PPAL */
+ 
+ .ppal-image {
+    background-image: url(./cocoimag/coni\ y\ lu\ colo\ risa.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+ }
+ 
+ @media only screen and (max-width: 1050px) {
+    .ppal-image {
+       height: 500px;
+    }
+ }
+ @media only screen and (max-width: 800px) {
+    .ppal-image {
+        background-image: url(./cocoimag/nosotros.jpg);
+       height: 500px;
+    }
+ }
+  
+ .efecto-artesanal p {
+    font-size: 40px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: white;
+ }
+ 
+ .efecto-artesanal {
+    animation: efecto-games 2.2s cubic-bezier(0.77, 0, 0.7, 1);
+ }
+ 
+ @keyframes efecto-games {
+    0% {
+       transform: translateX(450px);
+    }
+ }
+ 
+ @media only screen and (max-width: 1050px) {
+    .efecto-artesanal h1 {
+       font-size: 40px;
+    }
+    .efecto-artesanal p {
+       font-size: 15px;
+    }
+ }
+ 
+ .boton-artesanal {
+    background: none;
+    padding: 10px;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border-radius: 0.25rem;
+    font-size: 25px;
+    font-family: 'Julius Sans One', sans-serif;
+ }
+ 
+ .boton-artesanal:hover {
+    background: rgb(146, 210, 226);
+    padding: 10px;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border-radius: 0.25rem;
+    font-size: 25px;
+    font-family: 'Julius Sans One', sans-serif;
+ }
+ 
+
+/* seccion contacto */
+
+.apertura-title {
+    font-family: 'Pattaya', sans-serif;
+ }
+ 
+ .links-contacto {
+    list-style: none;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 35px;
+ }
+ 
+ .links-contacto p {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 30px;
+ }
+ 
+ @media only screen and (max-width: 800px) {
+    .apertura-title {
+       font-size: 20px;
+    }
+    .links-contacto p {
+       font-size: 15px;
+    }
+ }
+ 
+ .formu {
+    font-family: 'Pattaya', sans-serif;
+ }
+ 
+ .formu h1 {
+    font-family: 'Pattaya', sans-serif;
+ }
