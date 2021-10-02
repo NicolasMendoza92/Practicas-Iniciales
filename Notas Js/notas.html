@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="notas.css">
+
+    <!-- CDN google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- CDN iconos-font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- Titulo e Icono -->
+    <title>Recordadora</title>
+    <link rel="icon" href="img/recordadora.png">
+</head>
+
+<body>
+    <section class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-between container-fluid">
+            <div>
+                <a href=""><img class="logo giro" src="img/recordadora.png" alt=""></a>
+                <button type="button" class="btn btn-outline-light my-3 mb-3" data-bs-toggle="modal"
+                    data-bs-target="#modalAbreNota"><i class="fas fa-plus-square"></i></button>
+            </div>
+            <div class="d-flex">
+                <!-- <form onsubmit="buscarNota(event)" class="d-flex my-3"> -->
+                <input class="form-control" type="text" id="busqueda" onkeyup="buscarNota()"
+                    placeholder="Busca tu Recuerdo" aria-label="search">
+                <!-- <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button> -->
+                <!-- <button onclick="limpiarFiltro()" class="btn btn-outline-light" id="boton" type="submit"><i
+                            class="fas fa-undo"></i></button> -->
+                <!-- </form> -->
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <section>
+            <div class="justify-content-center m-auto my-3 p-2">
+                <div class="tableta">
+                    <table class="table table-dark table-striped my-3" id="miTabla">
+                        <thead>
+                            <tr>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contenidoTabla">
+                            <!-- aca va lo dinamico con js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Creacion de NOTA -->
+
+    <div class="modal fade" id="modalAbreNota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body modal-creanota">
+                    <div class="d-flex justify-content-md-start align-items-center mb-2">
+                        <img class="recordadora" src="img/recordadora.png" alt="">
+                        <h5 class="modal-title" id="exampleModalLabel"><b>Guarda tu recuerdo</b></h5>
+                    </div>
+                    <form onsubmit="agregarNota(event)">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" minlength="2" maxlength="60" id="titulo"
+                                placeholder="Titulo" autocomplete="off" only>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" minlength="2" maxlength="500" id="texto"
+                                placeholder="Escribe tu Recuerdo"></textarea>
+                        </div>
+                        <div class=" d-flex justify-content-between mb-3">
+                            <div>
+                                <select class="form-select seleccionada" id="tipo">
+                                    <option class="opciones">Trabajo</option>
+                                    <option class="opciones">Personal</option>
+                                    <option class="opciones">Varios</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="text" id="nuevoTipo" class="tipo-nuevo" placeholder="Nuevo tipo"
+                                    autocomplete="off">
+                                <button type="button" onclick="agregarTipo()"
+                                    class="btn btn-outline-light btn-sm boton-agregador"><b>+</b></button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-outline-light">Guardar</button>
+                            <button type="button" class="btn btn-outline-light btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">Cerrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL VER NOTA ESCRITA -->
+
+    <div class="modal fade" id="modalVerNota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-vernota">
+                <div class=" d-flex justify-content-between align-items-center my-2">
+                    <img class="recordadora" src="img/olvidadora.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel"><b>¿Olvidaste algo?</b></h5>
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+                </div>
+                <div id="detalleNota" class="modal-body">
+                    <!-- aca va lo dinamico con js -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal Edicion de NOTA -->
+
+    <div class="modal fade" id="modalEditarNota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <form onsubmit="edicionNota(event)">
+                    <div class="modal-body modal-editarnota">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="tituloEditado">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="textoEditado"></textarea>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-around">
+                            <div>
+                                <select class="form-select seleccionada" id="tipoEditado">
+                                    <option class="opciones">Trabajo</option>
+                                    <option class="opciones">Personal</option>
+                                    <option class="opciones">Varios</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="text" id="nuevoTipoEditado" class="tipo-nuevo" placeholder="Nuevo tipo"
+                                    autocomplete="off" aria-label="Default select example">
+                                <button type="button" onclick="agregarTipoEditado()"
+                                    class="btn btn-outline-light btn-sm boton-agregador"><b>+</b></button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-light">Guardar</button>
+                            <button type="button" class="btn btn-outline-light btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">X</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <!-- links de JS propios -->
+    <script src="notas.js"></script>
+</body>
+
+
+</html>

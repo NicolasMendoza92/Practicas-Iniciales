@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    /* background-image: url(https://fondosmil.com/fondo/23797.jpg); */
+    background-color: black;
+}
+
+/* NAV BAR */
+
+.logo { 
+    max-width: 50px;
+}
+.giro {
+    transition-duration: 0.5s;
+}
+.giro:hover {
+    transform: rotate3d(0.8,1,0,360deg);
+    transition-timing-function:ease-in;
+}
+
+/* PANEL PRINCIPAL DE NOTAS */
+.tableta {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+/* ESTILO DE MODALES  */
+
+/* Modal crear Nota */
+.modal-creanota{
+    background-color:rgba(43, 43, 43, 0.877);
+    color: whitesmoke;
+}
+.recordadora{
+    width: 50px;
+}
+.seleccionada {
+    font-size: smaller;
+}
+.opciones{
+    font-size: 15px;
+}
+.tipo-nuevo{
+    font-size: 15px;
+}
+
+
+/* Modal Editar nota */
+.modal-editarnota {
+    background-color: rgba(43, 43, 43, 0.877);
+    color: whitesmoke;
+}
+.viejita{
+    width: 50px;
+    border-radius: 2rem;
+}
+
+/* Modal Ver Nota */
+.modal-vernota{
+   background-color: rgba(43, 43, 43, 0.877);
+   color: whitesmoke;
+}
+.nota-encontrada{
+    font-size: smaller;
+}
+
